@@ -12,6 +12,7 @@ body {
   justify-content: center;
   font-family: 'Roboto', sans-serif;
   background-color: #e3e3e3;
+  overflow-x: hidden;
 }
 
 h1 {
