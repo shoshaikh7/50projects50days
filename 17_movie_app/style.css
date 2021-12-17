@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap');
 
 :root {
   --primary-color: #22254b;
@@ -16,10 +17,17 @@ body {
 }
 
 header {
-  padding: 1rem;
+  padding: 1rem 3rem;
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: space-between;
   background-color: var(--secondary-color);
+}
+
+header #logo {
+  font-family: 'Gravitas One', san-serif;
+  color: #fff;
+  font-size: 22px;
 }
 
 .search {
@@ -44,6 +52,7 @@ header {
 main {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .movie {
@@ -63,7 +72,7 @@ main {
 .movie-info {
   padding: 0.5rem 1rem 1rem;  
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   color: #eee;
   letter-spacing: 0.5px;
@@ -74,10 +83,12 @@ main {
 }
 
 .movie-info span {
+  width: 40px;
   padding: 0.25rem 0.5rem;
   background-color: var(--primary-color);
   border-radius: 3px;
   font-weight: bold;
+  text-align: center;
 }
 
 .movie-info span.green {
@@ -106,4 +117,11 @@ main {
 
 .movie:hover .overview {
   transform: translateY(0);
+}
+
+@media(max-width: 600px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
 }
