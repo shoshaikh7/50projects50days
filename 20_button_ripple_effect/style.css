@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
 * {
-  box-sizing: border-box;  
+  box-sizing: border-box;
 }
 
 body {
@@ -13,4 +13,40 @@ body {
   align-items: center;
   justify-content: center;
   font-family: 'Roboto', sans-serif;
+  background-color: #000;
+}
+
+button {
+  padding: 20px 30px;
+  margin: 10px 0;
+  background-color: purple;
+  color: #fff;
+  border: 1px solid purple;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  overflow: hidden;
+  position: relative;
+}
+
+button:focus {
+  outline: none;
+}
+
+button .circle {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  animation: scale 0.5s ease-out;
+}
+
+@keyframes scale {
+  to {
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+  }
+
 }
