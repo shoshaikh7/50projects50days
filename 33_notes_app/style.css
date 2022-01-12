@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+
+* {
+  box-sizing: border-box;  
+}
+
+body {
+  margin: 0;
+  padding-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Poppins', sans-serif;
+  background-color: #7bdaf3;
+}
+
+.add {
+  padding: 0.5rem 1rem;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  border: none;
+  border-radius: 3px;
+  background-color: #9ec862;
+  color: #fff;
+  cursor: pointer;
+}
+
+.note {
+  height: 400px;
+  width: 400px;
+  margin: 30px 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+}
+
+.note .tools {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #9ec862;
+}
+
+.note .tools button {
+  margin-left: 0.5rem;
+  font-size: 1rem;
+  border: none;
+  color: #fff;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.note textarea {
+  width: 100%;
+  height: 400px;
+  padding: 20px;
+  font-family: inherit;
+  font-size: 1.2rem;
+  outline: none;
+  border: none;
+}
+
+.main {
+  padding: 20px;
+}
+
+.hidden {
+  display: none;
+}
