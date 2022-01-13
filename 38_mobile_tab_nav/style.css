@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 * {
   box-sizing: border-box;  
@@ -6,11 +6,68 @@
 
 body {
   margin: 0;
-  height: 100vh;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
+  height: 100vh;  
+  display: flex;  
   align-items: center;
   justify-content: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  background-color: rgba(155, 89, 182, 0.7);
+}
+
+.phone {
+  height: 600px;
+  width: 350px;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #eee;
+  border-radius: 15px;
+}
+
+.phone .content {
+  height: calc(100% - 60px);
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.4s ease;
+  opacity: 0;
+}
+
+.phone .content.show {
+  opacity: 1;
+}
+
+nav {
+  width: 100%;
+  margin-top: -5px;
+  position: absolute;
+  bottom: 0; 
+  left: 0;
+}
+
+nav ul {
+  height: 60px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  background-color: #fff;
+  list-style-type: none;
+}
+
+nav ul li {
+  padding: 10px;
+  flex: 1;
+  text-align: center;
+  color: #777;
+  cursor: pointer;
+}
+
+nav ul li p {
+  margin: 2px 0;
+  font-size: 12px;
+}
+
+nav ul li:hover, nav ul li:active {
+  color: #8e44ad;
 }
