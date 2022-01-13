@@ -68,6 +68,6 @@ nav ul li p {
   font-size: 12px;
 }
 
-nav ul li:hover, nav ul li:active {
+nav ul li:hover, nav ul li.active {
   color: #8e44ad;
 }
