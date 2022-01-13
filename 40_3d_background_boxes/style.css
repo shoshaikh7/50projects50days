@@ -65,8 +65,7 @@ body {
   width: 125px;
   height: 125px;
   position: relative;
-  background-image: url('https://media.giphy.com/media/SPimgKxdLZHHs5eosn/giphy.gif');
-  /* background-image: url('https://media.giphy.com/media/sfNDgM8g9ffKTJFCq5/giphy.gif'); */
+  background-image: url('https://media.giphy.com/media/SPimgKxdLZHHs5eosn/giphy.gif');  
   background-repeat: no-repeat;
   background-size: 500px 500px;
   transition: 0.4s ease;
