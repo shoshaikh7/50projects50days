@@ -1,0 +1,501 @@
+:root {
+  --primary: #ea40a4;
+  --secondary: #3a82ee;
+  --light: #eee;
+  --gray: #aaa;
+  --dark: #313154;
+  --danger: #ff5b57;
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --secondary-glow: 0px 0px 4px rgba(58, 130, 238, 0.75);
+  --primary-glow: 0px 0px 4px rgba(234, 64, 164, 0.75);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "montserrat", sans-serif;
+}
+
+body {
+  width: 100%;
+  background: var(--light);
+  color: var(--dark);
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark);
+}
+
+main {
+  padding: 2rem 1.5rem;
+}
+
+.app {
+  width: 100%;
+  max-width: 100rem;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+}
+
+header #logo {
+  display: block;
+  margin: 0 auto;
+  width: 400px;
+}
+
+header #logo img {
+  width: 100%;
+}
+
+header #heading {
+  margin: 1rem 0;
+}
+
+section#projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project {
+  margin: 0 1rem 1rem 0;
+  padding: 1rem;
+  width: 25rem;
+  background-color: #fff;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(to right, rgb(60, 0, 0), rgb(200, 0, 0)) border-box;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+.project-img {
+  width: 100%;
+  height: 10rem;
+  margin-top: 1rem;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.project-name {
+  margin-bottom: 0.2rem;
+  font-size: 1.2rem;
+}
+
+.project-number {
+  font-weight: 700;
+}
+
+.project-info {
+  margin-top: 0.5rem;
+}
+
+#expanding-card-img {
+  background-image: url(./assets/project_imgs/01_expanding_card.png);
+}
+
+#expanding-card-img:hover {
+  background-image: url(./assets/project_gifs/01_expanding_card.gif);
+}
+
+#progress-steps-img {
+  background-image: url(./assets/project_imgs/02_progress_steps.png);
+}
+
+#progress-steps-img:hover {
+  background-image: url(./assets/project_gifs/02_progress_steps.gif);
+}
+
+#rotating-nav-img {
+  background-image: url(./assets/project_imgs/03_rotating_nav.png);
+}
+
+#rotating-nav-img:hover {
+  background-image: url(./assets/project_gifs/03_rotating_nav.gif);
+}
+
+#hidden-search-img {
+  background-image: url(./assets/project_imgs/04_hidden_search.png);
+}
+
+#hidden-search-img:hover {
+  background-image: url(./assets/project_gifs/04_hidden_search.gif);
+}
+
+#blurry-load-img {
+  background-image: url(./assets/project_imgs/05_blurry_load.png);
+}
+
+#blurry-load-img:hover {
+  background-image: url(./assets/project_gifs/05_blurry_load.gif);
+}
+
+#scroll-animation-img {
+  background-image: url(./assets/project_imgs/06_scroll_animation.png);
+}
+
+#scroll-animation-img:hover {
+  background-image: url(./assets/project_gifs/06_scroll_animation.gif);
+}
+
+#split-landing-img {
+  background-image: url(./assets/project_imgs/07_split_landing.png);
+}
+
+#split-landing-img:hover {
+  background-image: url(./assets/project_gifs/07_split_landing.gif);
+}
+
+#form-wave-img {
+  background-image: url(./assets/project_imgs/08_form_wave.png);
+}
+
+#form-wave-img:hover {
+  background-image: url(./assets/project_gifs/08_form_wave.gif);
+}
+
+#soundboard-img {
+  background-image: url(./assets/project_imgs/09_soundboard.png);
+}
+
+#soundboard-img:hover {
+  background-image: url(./assets/project_gifs/09_soundboard.gif);
+}
+
+#dad-jokes-img {
+  background-image: url(./assets/project_imgs/10_dad_jokes.png);
+}
+
+#dad-jokes-img:hover {
+  background-image: url(./assets/project_gifs/10_dad_jokes.gif);
+}
+
+
+
+#event-keycodes-img {
+  background-image: url(./assets/project_imgs/11_event_keycodes.png);
+}
+
+#event-keycodes-img:hover {
+  background-image: url(./assets/project_gifs/11_event_keycodes.gif);
+}
+
+#faq-collapse-img {
+  background-image: url(./assets/project_imgs/12_faq_collapse.png);
+}
+
+#faq-collapse-img:hover {
+  background-image: url(./assets/project_gifs/12_faq_collapse.gif);
+}
+
+#random-choice-picker-img {
+  background-image: url(./assets/project_imgs/13_random_choice_picker.png);
+}
+
+#random-choice-picker-img:hover {
+  background-image: url(./assets/project_gifs/13_random_choice_picker.gif);
+}
+
+#animated-nav-img {
+  background-image: url(./assets/project_imgs/14_animated_nav.png);
+}
+
+#animated-nav-img:hover {
+  background-image: url(./assets/project_gifs/14_animated_nav.gif);
+}
+
+#incrementing-counter-img {
+  background-image: url(./assets/project_imgs/15_incrementing_counter.png);
+}
+
+#incrementing-counter-img:hover {
+  background-image: url(./assets/project_gifs/15_incrementing_counter.gif);
+}
+
+#drink-water-img {
+  background-image: url(./assets/project_imgs/16_drink_water.png);
+}
+
+#drink-water-img:hover {
+  background-image: url(./assets/project_gifs/16_drink_water.gif);
+}
+
+#movie-app-img {
+  background-image: url(./assets/project_imgs/17_movie_app.png);
+}
+
+#movie-app-img:hover {
+  background-image: url(./assets/project_gifs/17_movie_app.gif);
+}
+
+#bg-slider-img {
+  background-image: url(./assets/project_imgs/18_bg_slider.png);
+}
+
+#bg-slider-img:hover {
+  background-image: url(./assets/project_gifs/18_bg_slider.gif);
+}
+
+#theme-clock-img {
+  background-image: url(./assets/project_imgs/19_theme_clock.png);
+}
+
+#theme-clock-img:hover {
+  background-image: url(./assets/project_gifs/19_theme_clock.gif);
+}
+
+#btn-ripple-effect-img {
+  background-image: url(./assets/project_imgs/20_btn_ripple_effect.png);
+}
+
+#btn-ripple-effect-img:hover {
+  background-image: url(./assets/project_gifs/20_btn_ripple_effect.gif);
+}
+
+#drag-n-drop-img {
+  background-image: url(./assets/project_imgs/21_drag_n_drop.png);
+}
+
+#drag-n-drop-img:hover {
+  background-image: url(./assets/project_gifs/21_drag_n_drop.gif);
+}
+
+#drawing-app-img {
+  background-image: url(./assets/project_imgs/22_drawing_app.png);
+}
+
+#drawing-app-img:hover {
+  background-image: url(./assets/project_gifs/22_drawing_app.gif);
+}
+
+#kinetic-loader-img {
+  background-image: url(./assets/project_imgs/23_kinetic_loader.png);
+}
+
+#kinetic-loader-img:hover {
+  background-image: url(./assets/project_gifs/23_kinetic_loader.gif);
+}
+
+#content-placeholder-img {
+  background-image: url(./assets/project_imgs/24_content_placeholder.png);
+}
+
+#content-placeholder-img:hover {
+  background-image: url(./assets/project_gifs/24_content_placeholder.gif);
+}
+
+#sticky-navbar-img {
+  background-image: url(./assets/project_imgs/25_sticky_navbar.png);
+}
+
+#sticky-navbar-img:hover {
+  background-image: url(./assets/project_gifs/25_sticky_navbar.gif);
+}
+
+#double-vertical-slider-img {
+  background-image: url(./assets/project_imgs/26_double_vertical_slider.png);
+}
+
+#double-vertical-slider-img:hover {
+  background-image: url(./assets/project_gifs/26_double_vertical_slider.gif);
+}
+
+#toast-notification-img {
+  background-image: url(./assets/project_imgs/27_toast_notification.png);
+}
+
+#toast-notification-img:hover {
+  background-image: url(./assets/project_gifs/27_toast_notification.gif);
+}
+
+#github-profiles-img {
+  background-image: url(./assets/project_imgs/28_github_profiles.png);
+}
+
+#github-profiles-img:hover {
+  background-image: url(./assets/project_gifs/28_github_profiles.gif);
+}
+
+#double-heart-click-img {
+  background-image: url(./assets/project_imgs/29_double_heart_click.png);
+}
+
+#double-heart-click-img:hover {
+  background-image: url(./assets/project_gifs/29_double_heart_click.gif);
+}
+
+#auto-text-effect-img {
+  background-image: url(./assets/project_imgs/30_auto_text_effect.png);
+}
+
+#auto-text-effect-img:hover {
+  background-image: url(./assets/project_gifs/30_auto_text_effect.gif);
+}
+
+#password-generator-img {
+  background-image: url(./assets/project_imgs/31_password_generator.png);
+}
+
+#password-generator-img:hover {
+  background-image: url(./assets/project_gifs/31_password_generator.gif);
+}
+
+#good-cheap-fast-img {
+  background-image: url(./assets/project_imgs/32_good_cheap_fast.png);
+}
+
+#good-cheap-fast-img:hover {
+  background-image: url(./assets/project_gifs/32_good_cheap_fast.gif);
+}
+
+#notes-app-img {
+  background-image: url(./assets/project_imgs/33_notes_app.png);
+}
+
+#notes-app-img:hover {
+  background-image: url(./assets/project_gifs/33_notes_app.gif);
+}
+
+#animated-countdown-img {
+  background-image: url(./assets/project_imgs/34_animated_countdown.png);
+}
+
+#animated-countdown-img:hover {
+  background-image: url(./assets/project_gifs/34_animated_countdown.gif);
+}
+
+#image-carousel-img {
+  background-image: url(./assets/project_imgs/35_image_carousel.png);
+}
+
+#image-carousel-img:hover {
+  background-image: url(./assets/project_gifs/35_image_carousel.gif);
+}
+
+#hoverboard-img {
+  background-image: url(./assets/project_imgs/36_hoverboard.png);
+}
+
+#hoverboard-img:hover {
+  background-image: url(./assets/project_gifs/36_hoverboard.gif);
+}
+
+#pokedex-img {
+  background-image: url(./assets/project_imgs/37_pokedex.png);
+}
+
+#pokedex-img:hover {
+  background-image: url(./assets/project_gifs/37_pokedex.gif);
+}
+
+#mobile-tab-nav-img {
+  background-image: url(./assets/project_imgs/38_mobile_tab_nav.png);
+}
+
+#mobile-tab-nav-img:hover {
+  background-image: url(./assets/project_gifs/38_mobile_tab_nav.gif);
+}
+
+#password-strength-bg-img {
+  background-image: url(./assets/project_imgs/39_password_strength_bg.png);
+}
+
+#password-strength-bg-img:hover {
+  background-image: url(./assets/project_gifs/39_password_strength_bg.gif);
+}
+
+#bg-boxes-img {
+  background-image: url(./assets/project_imgs/40_3d_bg_boxes.png);
+}
+
+#bg-boxes-img:hover {
+  background-image: url(./assets/project_gifs/40_3d_bg_boxes.gif);
+}
+
+
+
+#verify-account-ui-img {
+  background-image: url(./assets/project_imgs/41_verify_account_ui.png);
+}
+
+#verify-account-ui-img:hover {
+  background-image: url(./assets/project_gifs/41_verify_account_ui.gif);
+}
+
+#live-user-filter-img {
+  background-image: url(./assets/project_imgs/42_live_user_filter.png);
+}
+
+#live-user-filter-img:hover {
+  background-image: url(./assets/project_gifs/42_live_user_filter.gif);
+}
+
+#feedback-ui-design-img {
+  background-image: url(./assets/project_imgs/43_feedback_ui_design.png);
+}
+
+#feedback-ui-design-img:hover {
+  background-image: url(./assets/project_gifs/43_feedback_ui_design.gif);
+}
+
+#custom-range-slider-img {
+  background-image: url(./assets/project_imgs/44_custom_range_slider.png);
+}
+
+#custom-range-slider-img:hover {
+  background-image: url(./assets/project_gifs/44_custom_range_slider.gif);
+}
+
+#netflix-nav-img {
+  background-image: url(./assets/project_imgs/45_netflix_nav.png);
+}
+
+#netflix-nav-img:hover {
+  background-image: url(./assets/project_gifs/45_netflix_nav.gif);
+}
+
+#quiz-app-img {
+  background-image: url(./assets/project_imgs/46_quiz_app.png);
+}
+
+#quiz-app-img:hover {
+  background-image: url(./assets/project_gifs/46_quiz_app.gif);
+}
+
+#testimonial-box-switcher-img {
+  background-image: url(./assets/project_imgs/47_testimonial_box_switcher.png);
+}
+
+#testimonial-box-switcher-img:hover {
+  background-image: url(./assets/project_gifs/47_testimonial_box_switcher.gif);
+}
+
+#random-image-feed-img {
+  background-image: url(./assets/project_imgs/48_random_image_feed.png);
+}
+
+#random-image-feed-img:hover {
+  background-image: url(./assets/project_gifs/48_random_image_feed.gif);
+}
+
+#todo-list-img {
+  background-image: url(./assets/project_imgs/49_todo_list.png);
+}
+
+#todo-list-img:hover {
+  background-image: url(./assets/project_gifs/49_todo_list.gif);
+}
+
+#insect-catching-game-img {
+  background-image: url(./assets/project_imgs/50_insect_catching_game.png);
+}
+
+#insect-catching-game-img:hover {
+  background-image: url(./assets/project_gifs/50_insect_catching_game.gif);
+}
