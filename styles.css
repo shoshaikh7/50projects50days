@@ -67,10 +67,13 @@ section#projects {
   padding: 1rem;
   width: 25rem;
   background-color: #fff;
-  background: linear-gradient(white, white) padding-box,
-    linear-gradient(to right, rgb(60, 0, 0), rgb(200, 0, 0)) border-box;
-  border: 1px solid transparent;
+  border: 1px solid #dadada;
   border-radius: 5px;
+  box-shadow: 3px 3px 6px 4px rgba(0, 0, 0, 0.1)
+}
+
+.project:hover {
+  box-shadow: 3px 3px 6px 4px rgba(0, 0, 0, 0.1)
 }
 
 .project-img {
@@ -90,10 +93,6 @@ section#projects {
 
 .project-number {
   font-weight: 700;
-}
-
-.project-info {
-  margin-top: 0.5rem;
 }
 
 #expanding-card-img {
