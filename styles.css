@@ -104,6 +104,43 @@ section#projects {
   font-weight: 700;
 }
 
+footer {
+  display: flex;
+  padding: 2rem 1.5rem;
+  justify-content: space-between;
+  font-size: 1rem;
+}
+
+.made-by {
+  padding-top: 0.3rem;
+}
+
+.highlight {
+  color: #db3e38;
+}
+
+.socials {
+  display: flex;
+  min-width: 6rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.socials a {
+  text-decoration: none;
+}
+
+#ss-logo {
+  width: 1.5em;
+  padding-top: 0.3rem;
+  transition: 300ms ease-in;
+}
+
+#ss-logo:hover {
+  transform: rotate(360deg);
+}
+
+
 #expanding-card-img {
   background-image: url(./assets/project_imgs/01_expanding_card.png);
 }
@@ -183,8 +220,6 @@ section#projects {
 #dad-jokes-img:hover {
   background-image: url(./assets/project_gifs/10_dad_jokes.gif);
 }
-
-
 
 #event-keycodes-img {
   background-image: url(./assets/project_imgs/11_event_keycodes.png);
@@ -425,8 +460,6 @@ section#projects {
 #bg-boxes-img:hover {
   background-image: url(./assets/project_gifs/40_3d_bg_boxes.gif);
 }
-
-
 
 #verify-account-ui-img {
   background-image: url(./assets/project_imgs/41_verify_account_ui.png);
